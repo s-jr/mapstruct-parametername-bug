@@ -7,9 +7,9 @@ import org.mapstruct.Mapping;
 public interface ExampleMapperConfig {
 
     @Mapping(target = "child", source = "source")
-    TargetParent map(Source source);
+    TargetClass map(SourceClass source);
 
-    @Mapping(target = "a", source = "sourceForParent.a")
-    @Mapping(target = "child", source = "sourceForChild")
-    TargetParent map(Source sourceForParent, Source sourceForChild);
+    @Mapping(target = "a", source = "sourceForTargetClass.a")
+    @Mapping(target = "child", source = "sourceForTargetClassOther")
+    TargetClass map(SourceClass sourceForTargetClass, SourceClass sourceForTargetClassOther);
 }

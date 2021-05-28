@@ -1,9 +1,9 @@
 package de.example;
 
-public class TargetParent {
+public class TargetClass {
 
     private int a;
-    private TargetChild child;
+    private TargetClassOther child;
 
     public int getA() {
         return a;
@@ -13,11 +13,11 @@ public class TargetParent {
         this.a = a;
     }
 
-    public TargetChild getChild() {
+    public TargetClassOther getChild() {
         return child;
     }
 
-    public void setChild(final TargetChild child) {
+    public void setChild(final TargetClassOther child) {
         this.child = child;
     }
 }
